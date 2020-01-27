@@ -7,7 +7,7 @@ class Maze:
     def __init__(self, width, height, maze):
         for i in range(width):
            for j in range(height):
-               self.maze[i][j] = Cell(width, height)
+               self.maze[i][j] = Cell(i, j, width, height)
 
         walls = []
         __prim__()
